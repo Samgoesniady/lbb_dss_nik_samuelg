@@ -30,7 +30,7 @@ dept = dept.reset_index()
 # plot: Bar plot
 plot_dept = px.bar(data_frame=dept, x = 'Profession', y='Jumlah Customer',
                   labels={'Profession': 'Profession',
-                          'Jumlah Customer':'Customer Count'}, color = 'Profession')
+                          'Jumlah Customer':'Customer Count'})
 
 col6.write('### Customer Professions Frequency')
 col6.plotly_chart(plot_dept, use_container_width=True)
